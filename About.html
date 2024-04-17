@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Rushi Palve VLOGs!-Travelling Soul!</title>
+  <style>
+    body {
+      background: #72c1ca;
+    }
+
+    div.container-footer.w-container {
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 940px;
+      padding-bottom: 40px;
+      padding-top: 70px;
+    }
+
+    div.container-footer.w-container:after {
+      clear: both;
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    div.container-footer.w-container:before {
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    div.w-row {
+      box-sizing: border-box;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    div.w-row:after {
+      clear: both;
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    div.w-row:before {
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    div.footer-column.w-clearfix.w-col.w-col-4 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      width: 33.3333%;
+    }
+
+    div.footer-column.w-clearfix.w-col.w-col-4:after {
+      clear: both;
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    div.footer-column.w-clearfix.w-col.w-col-4:before {
+      content: " ";
+      display: table;
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
+    }
+
+    img.failory-logo-image {
+      border-width: 0;
+      box-sizing: border-box;
+      display: inline-block;
+      float: left;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+    h3.footer-failory-name {
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: block;
+      font-family: Lato, sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.1em;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-top: 24px;
+    }
+
+    p.footer-description-failory {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      font-family: Lato, sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      letter-spacing: .5px;
+      line-height: 1.5em;
+      margin-bottom: 16px;
+      margin-top: 15px;
+    }
+
+    br {
+      box-sizing: border-box;
+    }
+
+    div.footer-column.w-col.w-col-8 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      width: 66.6667%;
+    }
+
+    div.w-col.w-col-8 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      width: 66.6667%;
+    }
+
+    div.w-col.w-col-7.w-col-small-6.w-col-tiny-7 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      width: 58.3333%;
+    }
+
+    h3.footer-titles {
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: block;
+      font-family: Lato, sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.1em;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-top: 24px;
+    }
+
+    p.footer-links {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      font-family: Lato, sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      letter-spacing: .5px;
+      line-height: 1.8em;
+      margin-bottom: 16px;
+      margin-top: 2px;
+    }
+
+    a {
+      background-color: transparent;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      font-family: Lato, sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.2em;
+      text-decoration: none;
+    }
+
+    a:active {
+      outline: 0;
+    }
+
+    a:hover {
+      outline: 0;
+    }
+
+    span.footer-link {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 300;
+    }
+
+    span.footer-link:hover {
+      color: #FFFFFF;
+      font-weight: 400;
+    }
+
+    span {
+      box-sizing: border-box;
+    }
+
+    strong {
+      box-sizing: border-box;
+      font-weight: 700;
+    }
+
+    div.w-col.w-col-5.w-col-small-6.w-col-tiny-5 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      width: 41.6667%;
+    }
+
+    div.column-center-mobile.w-col.w-col-4 {
+      box-sizing: border-box;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      width: 33.3333%;
+    }
+
+    a.footer-social-network-icons.w-inline-block {
+      background-color: transparent;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: inline-block;
+      font-family: Lato, sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.2em;
+      margin-right: 8px;
+      margin-top: 10px;
+      max-width: 100%;
+      opacity: .8;
+      text-decoration: none;
+    }
+
+    a.footer-social-network-icons.w-inline-block:active {
+      outline: 0;
+    }
+
+    a.footer-social-network-icons.w-inline-block:hover {
+      opacity: 1;
+      outline: 0;
+    }
+
+    img {
+      border-width: 0;
+      box-sizing: border-box;
+      display: inline-block;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+    p.footer-description {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      font-family: Lato, sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      letter-spacing: .5px;
+      line-height: 1.5em;
+      margin-bottom: 16px;
+      margin-top: 15px;
+    }
+
+    strong.link-email-footer {
+      box-sizing: border-box;
+      font-weight: 700;
+    }
+
+    body {
+      background: linear-gradient(rgb(206, 204, 123), rgb(212, 237, 50), rgb(200, 160, 66));
+      /* background-image: url(image/); */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #navi {
+      background: linear-gradient(to left top, rgb(196, 206, 56), orange);
+      z-index: 2;
+      overflow: visible;
+      position: fixed;
+      width: 100%;
+    }
+
+    #bred {
+      background-color: rgb(67, 204, 214);
+    }
+
+
+
+    #H1 {
+      text-align: left;
+      overflow: visible;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: lightyellow;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke: white;
+      position: relative;
+    }
+
+    H1::before,
+    H1::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.3s ease-out;
+    }
+
+    H1:hover::before {
+      color: #994444;
+      transform: translate(12px, -12px);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+    H1:hover::after {
+      color: #77efff;
+      transform: translate(24px, -24px);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+    .div1 {
+      padding: 1px;
+    }
+
+    #img1 {
+      margin-top: 25px;
+      margin-left: 10px;
+    }
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card:hover{border: 5px solid rgb(203, 198, 196);}
+  </style>
+</head>
+
+<body>
+  <!-- <div class="container-fluid"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navi">
+    <a class="navbar-brand" style="font-family: cursive;"
+      href="https://www.bing.com/ck/a?!&&p=fa47cfb6c7eb70f4JmltdHM9MTcwMzM3NjAwMCZpZ3VpZD0wZTcxM2M1MS1jYmEwLTZhYTktM2JhOS0yZmMwY2FjODZiMGMmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=0e713c51-cba0-6aa9-3ba9-2fc0cac86b0c&psq=rushi+palve+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQHJ1c2hpcGFsdmU&ntb=1">Rushi
+      Palve VLOGs!-Travelling Soul!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" target="_parent" href="D:\HTML learning\BOOTSTRAPharry\index.html">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" target="_blank" href="/tutorialboot.html">About</a>
+          </li> -->
+        <li class="nav-item">
+          <a class="nav-link" target="_self " href="D:\HTML learning\BOOTSTRAPharry\About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="D:\HTML learning\BOOTSTRAPharry\AllVideos.html">All Videos</a>
+        </li>
+        <li class="nav-item dropdown" id="drop">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Playlists
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"
+              href="https://www.youtube.com/watch?v=AUzHygs6HEM&list=PLdVUlXJLhJiAG7TTtUDZ2jOJ3n6zg9tmI&pp=iAQB"
+              target="_blank">Village vlogs</a>
+            <a class="dropdown-item"
+              href="https://www.youtube.com/watch?v=FJj6sLk9hkY&list=PLdVUlXJLhJiBY0eaE_E5IBS_xF30RWB_C&pp=iAQB"
+              target="_blank">Trekinng Vlogs</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"
+              href="https://www.youtube.com/watch?v=Xcr5LVKhNgE&list=PLdVUlXJLhJiCeD_IkY4LnjkmIgkIrZ0qp&pp=iAQB"
+              target="_blank">City vlogs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="D:\HTML learning\BOOTSTRAPharry\Feedback.html">Feedback</a>
+        </li>
+
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+  </nav>
+  <h1 data-text="ABOUT US!" id="H1">ABOUT US!</h1>
+<div>
+
+
+  
+ 
+
+  <div class="card mb-3" style="max-width: 540px; background: linear-gradient(rgb(148, 153, 81),rgb(151, 120, 16));">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="https://yt3.googleusercontent.com/7lhQOMuV5KdQIM8GLDAy9pou1mTRUmLJInMRzzWBdVDGG4755xUvgFWM8qZW-9gDvKhN8vtHb2k=s176-c-k-c0x00ffffff-no-rj"
+          class="img-fluid rounded-start" alt="..." id="img1" style="border: black solid ;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Mr.Rushi Palve</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit voluptatem nobis
+            sed ea aperiam sint aspernatur ullam quidem perfe</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <p id="paragraph1"> Hello Friends My Name Rishi Palve Welcome to our Rishi Palve Vlog Channel. Here you are welcome
+      to travel blogs, wholesale retail market blogs, historical information blogs, as well as Rishi Palve on our Rishi
+      Palve vlog channel. Here you will find travel blogs, wholesale retail market blogs, historical information blogs,
+      as well as some blogs from daily life. You can see all these blogs in Marathi, Hindi languages ​​in our blog
+      <br>
+    <h4>How I Started Vloging?</h4>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore libero quidem labore voluptatum, eum recusandae,
+    aliquam at tempora qui obcaecati id unde. Maiores odio obcaecati natus! Beatae, ducimus suscipit magni soluta at
+    vero voluptatibus nulla temporibus repellat expedita labore porro ab. Possimus nemo eius, dolor amet deleniti omnis
+    fugit ipsam.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quae, nihil dolor nisi ab deleniti aut quasi dolores
+    odit quis possimus id ipsam repellendus vitae magni dolorum atque molestiae minima suscipit ea. Quaerat doloribus a
+    magnam dolorem hic aspernatur, excepturi labore, accusamus, dicta sapiente fugiat non error dolores itaque odit!
+    <br>
+    <br>
+    <h4>Content Information</h4>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate libero natus, perferendis nam aliquid
+    ducimus. Aut, animi tempora dolorem voluptate aspernatur repellendus rerum esse ullam omnis cum iusto at, optio
+    asperiores consequuntur eveniet quae, eligendi sapiente. Dolore at magnam quis, assumenda ducimus pariatur. Laborum
+    tenetur ipsa nesciunt iste deleniti quam cum illum maxime aspernatur eos perspiciatis amet repellat in quisquam,
+    reiciendis recusandae veritatis impedit molestias! Quas nesciunt qui officiis, excepturi voluptate tempore tenetur
+    quasi nisi temporibus voluptatum ratione, minima ipsum inventore? Fugiat dolorum sunt cumque impedit laudantium.
+    Laboriosam tempora veniam illum deleniti delectus doloribus velit facere at facilis hic.
+    </p>
+
+    <br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/Rushi Palve Vlogs.png" alt="Avatar" style="width:300px;height:300px; background-color: aliceblue;">
+        </div>
+        <div class="flip-card-back" style="background-blend-mode: color-burn; background-color: #0b0808;">
+          <h1>Rushi Palve</h1> 
+          <p>Youtuber</p> 
+          <p>Discover The Unknown!</p>
+        </div>
+      </div>
+    </div>
+    <div><span>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="bred">
+            <li class="breadcrumb-item"><a
+                href="https://www.bing.com/ck/a?!&&p=fa47cfb6c7eb70f4JmltdHM9MTcwMzM3NjAwMCZpZ3VpZD0wZTcxM2M1MS1jYmEwLTZhYTktM2JhOS0yZmMwY2FjODZiMGMmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=0e713c51-cba0-6aa9-3ba9-2fc0cac86b0c&psq=rushi+palve+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQHJ1c2hpcGFsdmU&ntb=1">Youtube</a>
+            </li>
+            <li class="breadcrumb-item"><a
+                href="https://www.instagram.com/rushipalve24?igsh=MWRzODJsM3hyZnh1bQ==">Instagram</a></li>
+            <li class="breadcrumb-item"><a href="https://www.facebook.com/rushikesh.palave">Facebook</a></li>
+
+          </ol>
+        </nav>
+      </span>
+    </div>
+    <div class="container-footer w-container">
+      <div class="w-row">
+        <div class="footer-column w-clearfix w-col w-col-4"><img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADqAWADASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAEHBQYCAwQI/8QAVhAAAQMDAQIGCwoKBgkFAAAAAQACAwQFEQYSIQcTMUFRsxQyNTZhcXN1gZGhFSIzUnJ0sbLB0hYjNEJVYpKUtNEXRVNUY4IlJkNkk6PCw/AkJ4OipP/EABwBAQABBQEBAAAAAAAAAAAAAAAFAQIDBAYHCP/EADYRAQABAgMFBAcIAwEAAAAAAAABAgMEBREGEiExURNBkbEVM2FicYGhFiIyNEJScuEjgsHR/9oADAMBAAIRAxEAPwCzdp3Sm07pUIgnad0ptO6VClA2ndKbTulQiCdp3Sm07pUIgnad0ptO6VCIJ2ndKbTulF1zTU9NE6oqZo4IGdtJM4MZ6CfsTWI4yrETVOkRrLs2ndKbTulaxU6307AXCBtVVkbg6KMRxnxGXf7FjZdf8ogtQ8BnqCfYxq1qsVZp51JmzkWY3o1otTp7eDedp3Sm07pVdu17dz2lDQM3Y98Zn/SQvO/XOpXE7IoGdAFNnH7TljnH2Y72/RspmVXOmI+azNp3Sm07pVXO1pqh2/sinb4G00X2grgdYarPJXgfJgh+1qs9IWmxGx+Ye74/0tTad0ptO6VUx1Vqp3LdJh8lkI+hq4HU2qT/AFtVejix/wBKp6RtMn2Nx3fVStzLukpl3Sqi/CTVBOfdas/aZ91Pwk1P+lqz9pn3VT0jbV+xmN/dT9Vu5d0pl/SVUX4Sao/S1Z+0z7qn8JdUfpaq/wCX91PSNo+xmN/dT9VubTulNp3SqkGp9Uj+tKj0iP7q7G6t1W3+sXH5UMJ/6VX0jaWzsbju6qnx/pa+07pTad0qrBrHVQzmsjd8qnh+wLtbrbU7QPxlG7Hx6Vm/1EKsZhaYqtj8wjlpPz/pZ207pTad0qt2a7v4GJKe3v8ACInsJ/ZcvRHr+uBHGWykIwM8XNK0n1ghXxjrM97Xr2VzKn9GvzhYG07pTad0rTYdfW9xxUW6qiySMxSxygDpwQD7VnLfqCxXNwZTVbRMcYhqGmKUnoaHbj6Cs9N+3X+GpF4jKcbho1u2piPFltp3Sm07pUb96LMjE7TulNp3SoRBO07pTad0qEQTtO6U2ndKhEE7TulNp3SihBO07pTad0qEQFKhEEooUoChEQSihEEqERB4rpcqS0UU1dUklrCGRRt7eaZ3axt+k+BVRdLtcbvUGorJM4JEMLMiGBp/Njb9qzWtbg6pu3YbXZgtzBGADuM8gD5HePkHoWrqBxuJmqrcp5Q9Y2Yya3ZsRirsa11fSPYIiKMdtECIiLhERAREQEREBERAREQEREBERATkwd+RvBG4g+AhEVYnTksqoirhLedLaplfJHa7pKX8YQyiqX9ttnkimPPn80+hbyqN3jeCWkEFrgcFpByCCOjlVv2G4G52mgq3nMpYYp/KxHYd6+X0qdwGIm5E0VPKdqsnowlcYmzGlNU8Y9rJqVCKTcQlFCIClQiCURQglQiICIpQQpREEIpRBCKUQQuTcbTc8gOT4hvXFdVVLxNJXzZxxVJUSAjmIjdvVJnSNV1NO9VEQpuvndU19xqTnM9XUS7+gyHHswvMobnAyd+ATnlypXJVzrVMvobDURbtU0U8oiBERWNgREQEREBETdv8HL0poprEcBERDURERUREQEREBERAREQFYGgpi6iulMeSCqZK3xTM3+1qr9bjoGQiuu0Wd0lHDJ6Y5CPtW9gatLsOX2ptRcy6uZ7tJ+qwUQKV0bxdCKUQQilEBQpRBCKVCApUIglFCIJRQiCUUIgLH32TirLfXjlFDM0f58M+1ZBYfVDtnT16PTBG39qVgWO7OlE/Bt4KnfxNunrMeapApRFycvoKnhAiIqLxERAREQFventOWq96fifO0sqhPUtjqYcCRmHbgeYjwFaIrW0IP9X4fnVV1hUhgKYquTFXRyG1l65YwlNy1OkxVHJot40vebOXyPj7IpAd1RTtJ2R/iMG8e0LB5BwRz8iv4tByCAQRggjOVql60VbLgX1FERR1TiSdgfiZDy+/ZyekLZv5f320Hle1/K3jY/2j/qrEXvuVoutolMddTljSTsTN99A/5Lxz+ArwKJqoqonSqHodjE28RRFy1OsCIisZ9RERFRERAREQFsuiZNi+Fn9tQ1DMfJLXLWln9HHGoKAfGiq2/wDKJW1hZ0u0oXPKd7L7sT0laalQEXTvCUooRBKKEQSihEEqERAUoiAiIgKFKIChSiCFhNVnGnbv4RTN9czVm1gNY979eP8AGpPT+MWG/wCrq+EpDLI3sZa/lHnCrPoREXKy9/gREVFRERAREQFa+hO4EPzqq6wqqFa+hO4EPzqq6wqSy/1k/BxW2X5Gn+UeUtp3+FRgrkhU+8jdE1PBUxviniZLG8YcyQBzSPStHvOg43cZPZn8W7BJpJnZjPPiJ53jxLfkPOsVyzRdjSqEhgsxxGBr37FWns7lC1VLWUUzqesgkgmbnLJBjOOdp5CPEulXlX2y23OEw1tPHKzBwXDDmeFr+UetVJfrdarbVmG33BtW3LttgGXQEHtTIPelQmJwk2vvRPB6jkm0dOYTFm5TMV+MePcxCIijnYROoiIgIiICzWlnlmoLORu2pZWHxOiesKstpon8ILF4ap3VPWex6yn4ozNo1wV2PdnyW4pUKV1TwIREQQpREBERAUKUQQiIgKVClBCIiAiIgLB6tbtaeun6rqV4/wCK0LOLDapBOn7z5KE+qZixXuNE/CW/l06Yu1PvR5wqZERcpL3+BERUXCIiAiIgK1tCdwIfnVV1hVUq1tCd78Pzqq6wqSy/1k/BxW2X5Gn+UeUtqTKgnmXjuFzttrhM9dURwswdkOOXvPQxg3lT0zpxl5NRRVcmKaY1l7crDXjUdnszXCpm26jGW00GHTHxjkA8ZWkXnXNwrOMgtbDSU53GZ2DUyDkx0N+lag5znuc97i57jlznkuc49JJUZfx9NP3bfF3GV7JXb2lzFzux075/8Z+86svN32og40lEcgQQOO04f4snKfYFr+ByAYCIoe5dquTrVL0jB4GxgqNyzTEQIiLE3hERAREQFmNMDOoLL4J3u9UT1h1ntIDa1Bbt2dllW7xfiXDK2MPGtyn4orOKt3A3p92fJaiJ0eJF1LwQREQEREEqFKhAREQERSghSiIIRSoQEUoghYzULC+xX1oGSKJ7h/lc132LKLy3GPjbfdIv7SiqmeuNysrjWmYZ8NVuXqKukx5qW6EUN3hp6QFK5OX0NTOsCIitXiIiAiIgdCtHRc9PTabZNPNHFCyoq3PfI4Na0bZ5SVVy7HT1D4Y6d0shgic50cRceLa528kN5Mraw1+LNW9ogc7yurM7NNmKtI1iZb9eNext24LLGHu3g1c4IYPDHGd58ZWh1VXWVsz6irnknmdyvlOSPAOYDwALpRLuJruzxnguy3JcLl8f4qePWeYiItVOaCIiAiIgIiICIiAtj0W0uv8ACRyR0lU8+kBv2rXFtugo9q53GTHwdAG55wZJR/JbeEjW9SgdoLnZ5ddn2LFRFK6Z4ahFKIIRFKAoUoghFKhAUqFKAiIgKFKhBKIiAmA7LSAQ8FhB5CHDCJzppqa6cVITxGGeohIwYZpYiOjYeWrrWb1VRuo75cN2I6pzauI43Fsoy725WEXJ3qd2uYfQOXX4xGGt3Y74gREWJviIiAiIgIiICIiAiIgIiICIiAiIgIiIC3rQEOI71UY7aSmpw75DXPcPaFou7eTuABOfErT0jRuo7HSF4xJVvlrHA8obKRsA+gBSOX0a3d7o43a/ERbwPZ99UxH/AFn1KhSugeQiIiCFKhSgIiIChSoQERSghFKIIRSoQEUoghFKhBgdTWP3Yo2ug2RXUm0+nzgCVh7aEk9P5vh8aq17XsfJG9jmSRuLJGPGHMcNxa4HnV4LC3jTlrvH42UPgqw3ZbUwYDyOYSAjDgo/FYOLv3qebsMh2hnL47C/xon6KnRbTU6GvsJeaeakqmDtcOdDIf8AK8Fv/wBljZNNaoiBL7XO4D+ydHJ7GOyoevDXaedL0exneAvRE03Y+fBiEXsfar1Hkvtle0DlzTS7vHgFed0FU3O1T1Lccu1BMPpasM2645w36cZh6vw1xPzh1ohyOVrx42OH2KNpo5SB48j6VTdnozRdonlVCUUbTfjN9YTab8ZvrCppKu/T1SijaZ8ZvrCbTfjN9YTSVd+nqlFG034zfWE2m/Gb6wmkm/T1Sijab8ZvrCbTPjD1ppKm/T1SigOB5MnxB38lzDJXHDY5XH9WOQ/QFXdq6LZvW451R4uKL0MorlIcR0Na8/q0033V6Y7FqKU4Zaq4/KhLB634Cui1XPKGCvHYaj8VyPGGOTGVnodIapmI2qSOEHnqJ4wB4wzJWct+g42ua+6VnGtHLBRhzGO8D5XYcR4gFsW8Hdr7tETitosBh6de0ir2Rxa/p2xzXqrYXtIt0Dw6qlxulxvEDD4fzvArXAa0Na0ANaAGgAAADcAAFwggp6aKOCniZFDG3ZZHG0Na0eABdinMPYizTp3vKs3zW5md7tKuFMcoERStlDIRSiCERSghFKIIRSoQERSghSiIIRSiCET+a1C767pLPcq22zWmre+le1vGNqImtka9oe17WuGcEFBt6LWdP6xotQ1s9FFQ1FLJFTGpa6WWOQSNa4Nc0BoByMhbMglQtb1Dq+h07V01HLRT1Us1MKlxhmjYIw55a1pDgTk4yvDa9e0l2uNBbYLRVMlq5CzbfUwlsbGtMj5CA3O4BBuSIiKaJyekqOXl5Dyg7/pRSi7VxLIzysYfG1p+xcTDTu3OhhI8MbD9i5qVTdhdFdUcpl0GkoTy0lMfHBF91cewbb/cqP8Ad4v5L0Lx3W4RWm23C5SxPmZRxtkMUbg1z9p7WYDnbudU3Y6Lu2ud1U+LkbdaXAg2+iIP+7xfyXH3Ks36Oof3eL+S03+k62/oas/eofup/Sdbf0LWfvUP3U3KeisYi7H6p8W5i2WcHIt1CD09jxfyXPsC2f3Gj/d4vurSf6Trb+haz96h+6oPCdbgCfcWs/eofupuU9Dt7s/qnxbwKK3jko6Qf/BF91chT0jd7aenaelsUY+xdjXBzWOGQHtY8A8oDhtKU3YU7a5+6fFx4uIckcY/yM/kuQAHIAPEAERV0hZv1dU5d0n1qM58PtVe631DqG0XelprdXPp4H26CdzGMicDI57wXZe0nmHOvDpTVGp7lqC10VbcZJqWYVRkjcyFocWQPeMljQeUdKqt4rQTo8CIgKURBCIpQQilEEIpRAUKUQQilQgKVCIJRQpQFCIgKr+EqhMdwtdyDfe1lK6mkIH+1pjuyfC1w9StBatr2i7L05UTNAMltqIaxvJniyeKkGfEfYgrrRtWKPUtmcSA2okloXk7hioYQ32gK7wCSB0nH2L51imfSz01THkOpp4ahvTmJ4k3epfQ3ZUDafs0kcS2mNbk7vxYj44exBS+tasVmpry4HMdM+Oij8Ap2Bp9uVl+Dah466XO4ObllDSNpo3EbuPqnAnHiaPatKnmfUz1FTITtzzSzvyckuleXnefGrd4P6HsTTtPUOAEtznmrnEcvFk8VGPUPag2xSumoqKOjiE1ZU09NCTgSVMrImk9DS471ivws0dt7Hu3RbROB8Ns55O22Nn2oM0pXTT1NHWRcdSVNPUxHdt00rJW+ksJwu1ARdElZb4XujmrqKKVpAeyWpgY9p5cOa52fYpiq6CZ3FwVlJNJsl2xBURSP2RuLi1jicIO5YrUdFV3Kx3igpGsdU1ULGQtkfsMLmysecuPgBWTklhhY6WaWKKJpAc+eRkbATyAueQF5zcbQASblbQNxJNZTffQVL+AOs/7rRfvsf3VgLhQVlsrKmgrGsbU0zmtlbG/baC5oeMOHLuK+gg5j2texzXMeNpjmnLXNIyCCOZUprXvq1B5eDqI0GOtNmut7qJ6a2xxSSww8fIJpmwtDC4M3F3jWYPB/rQgjsWi3/76z7q9/Bp3Zu3mwdc1WnLNTwMa+eaCGMu2A+olZE0uIzgGQgZQcmAtZE0gZaxjd3S1oB3qV5TcbQBn3Stv75TffXqG/AbvzjBGMHo3jcgIvObhamktdcbeHNJDg6rpwQRuwQX5XZFUUdRt9j1NNPsY2+x5o5dnO8bWwThBVnCT3eovNNN1kixmh++qy/Jrf4eRZLhJ7vUXmmm6yRY3Q/fVZfk1v8PIguroReOvutntbWOuVfTUpeNpjJX/AI17c4y2JgL8eHC66C9WK6OLLdcaape0EmNji2XA5XcXIA7HoQZFEQAuOACfF0fQghFiavUulqKQxVN4oWyNyHNic+YtI5ncSHYSl1NpWte2KmvFE6RxAa2Vz4S4nkDeOa3JQZdEO7/z+ShAUqEQSiKEEqERAUqFKAiIgKFKhBK6ammjraaro5RmOrgmpn8nJIwtBGd27cV3KOTkQfOssUkMksEoIfDI+GTfyOY4sO9Wh7q/+23ZO2ONdbmWk5xkyGXsYg/5Rlajrih7B1JcthuI6wR18Yx/bD3+PE4OXm90mjSLLSH4kOoJaksH51P2OHZPg2ju8SDCNjkmfDBEDxk8scEeB+dI4MHIr6qp6PTlkfM5odT2qjhhhjBA417AIo4wf1nKp9E0HZ2pbZtDMVC2W4v5cbUIAjBx+sQfQtz4Sql0dntlKDuqrg58nSWwREgH0uB9CCtblc7hdqqWtuE7pZXZIySI4mnfxcTeQNHgXcLBqH3OF2NtqRb9jjROdjPFHdxvF529nwlqxzWGWSGLHwssUXgw94aR6V9EmCJ0ElLsAwupn0xYR73YMRj2cdCCgbbcrjaKqKtt8zopmEFzQTxczBvMcrRuLSr2tlwgutvoLjBujq4Gy7J5WO7V8Z+Scj0L5/czYe+P+ze5m79UkK1uDapdLY62mcc9h3KVrMn8yeNk2PEDlBpGtQPwq1BuH5RD/DxL38HIH4RyYA7lVfJ5SJeHWvfTqDy8P8PEvdwc98cnmqr6yJBuXCAAdMVPJ+XUHL8pypt4bxb9ze0dzeBXLr/vZqfn1B9Zypp/aSfId9CC/wCyge4th5O5dDyeRaqk1r31ag8vB1Eatuy9xrF5soupaqk1r31ag8vB1EaDLcGndm7ebB1zVsPCUP8AQNv87x9RIte4NO7N282DrmrYeEnuDbvO8fUSIKjka3Yk3DtTzL6No8cTQeRpfqNXznJ8HJ8kr6Mo/gaDyNL9RqD58rwOz7luH5ZVco/xXKwOC8AN1NyfCW/k+Q9aDX/l9y+eVXWuW/cGHa6m8pb/AKj0GO4Se71H5ppuskWsWi6PstwhucbGvlpoqlsIfkMEssTomudjeQM5xzrZ+Enu9ReaabrJFhdI09PVam09DUMEkXZTpCxwBaXRRPkZkHmBAKDpuFs1UYnXq6UVfxdS4PfV1TffOLtzTIM7QB5G5AHIFjIpZ6eSOeCR8VRC9skMkZLXse3eCCF9EXumZV2e80zxkTUFU3f8biyWn0HGF86A5DT4B68IL9sdy917RbLiQGyVVO10zW9q2ZpLJAMc2QfX4FpXCFqCpilbYKOV0TeKZNc3xuIc8yb2U5I3gAe+djlyBycuW4N5TLp8RHkgudXCN+Th7my8/wApVrqCpdV32/VDjvfcaoDlOGxvMbRv8ACDz2213W71LqS10jqmdkZke1pYxjGA4y97yGjPNvXGvt1wtlRJR3CmfBOwBxZJgjZPI5rmkgg82CrG4KYWcVqOox781FJBnn2Wxufj2rz8KkTBVafnx758FZCT0tY5jwPagcHl+qZXz2KrlfI1kLqm3OkJLmNYRxkGTvxvy3f0hWMqO0hKYdT6eLf9pUyU56CJYXsP2H0K8UEKVClAREQFClQgKVCIJRQpQEUIglFCIK+4TKIup7Lc2t+CkmoJj0CQcbHn1FVnjOPV4Vd2soY59MXwSAniYoamPHNJHK3H0nKpFBZXBlQgQXu6ObvnmioIDyfi4Bxj8eMuGfEuPCe44003mxcHenajC2TRUUcWl7CGNA42GSeQ87pJJXFzita4Txv0yebZuAH7UaCvqX8qoPndL1rV9Ejtj6R6wV860v5XQfPKXrWr6KHb+k/Qg+dZ/h6r5xN9cqxeDF34jUTeYVNG70mN4+wKup/h6r5xP9cqxODAfidRn/eKIeqN6DWNa99OoPLw/wAPEvfwc98cnmqr6yJeDWvfTqDy8P8ADxL3cHPfHJ5qq+siQbnr/vZqfn1B9Zypt/aSfId9CuTX/ezU/PqD6zlTT+0k+Q76EF/2XuNYvNlF1LVUmte+rUHl4OojVt2XuNYvNlF1LVUete+rUHl4OojQZfg07s3bzYOuath4Se4Nu87x9RItd4NO7N282DrmrYuEnuDbvO8fUSIKkk+Dk+SV9GUfwNB5Gl+o1fOcnwcnySvoyj+BoPI0v1GoPn6v/L7l88qutct+4MO11N5S3/UetBr/AMvuXzyq61y37gw7XU3lLf8AUegx3CT3eovNNN1kixeiu+rT/lp/4eRZPhJ7vUXmmm6yRYvRXfVp/wAtP/DyIL0rB/6Ss+bT9WV80t7VviC+lq0htHWu+LSzn1RlfNLe1b8kILZ4Mu49Z0e7MnthhVYVxzXXE9NZV9a5WfwZdx63zzJ7IYQqvrt1bcM8orKrP/Fcg3bQWpLBYaS7RXKokjkqauOaJrIJpcsbEGkkxtK6Ne6hsd+9xfcyeSU0prOO24ZIgBIGbOOMAzyf+c2N03pObUkFdOy4R0raWojpy10DpS8vZxm1kPbhZ7+jGq3f6ch/cXn/ALyDUtM98ulvOsH1XK+FoFq4PZ7ddLVcXXiOUUNXHUmIUjmcZsgjZDjIenoW/IJRQiCURQglQiICIiApUIgIiICIiDCat72dRfMh1sao1Xlq3vY1F8zHWxqjUF36O719O/M/+45YDhNhJt9jqA3PFVtRA53QJIw8D2FbBo7vX0780/7j13altLr1Za+gjx2RhlRSbRwDUQkua0n9be30oKMieI5qaQjdHUQPP+WRpK+i9poDnkjAY6Tl5gwu5V85SRvY+WKVjo5I3OjmjkBD43jcWuby5C2Z2uNSOtJtBNPgwdimrDHirMGzsbBO1s5xuJxlBrcjg+SV/wAeR7/2nEqz+DOEttN3qC3dUXPYY7nIhha0+0lVfHHNNJDT08Tpaid7YqeGMZfJI7cGtHR0nmV76ftQslmt1uLg6WGMvqnjcH1Eri+QjwZJA8SCqNbD/WnUHhnhP/5417eDogajfyb7VWAZ58PjK58IlFLT31tbsniLjTQvY/G7jYWiJ7SenkPpWs2y41tprqa4UTmieAuAD27THscNlzHt5wfHzILW4QN2man59QD07Ttypt/aSfJdj1Lbn1+qtczTU73RR0Vuppq6dlNGW0sT44nOYH5JJe84Ay44yT49RdvjecfmO8HMgv8AsvcaxebKLqWqo9a99WoPLwdRGrcsvcWw+a6HqWqo9a99WoPLwdRGgy3Bp3Zu3mwdc1bFwkb7Db/BdouokWvcGndm7ebB1zVuGuKGSu05WcU0vkoZoa5jW5y5keWyYA6GuJ9CClJPg5D0NJ9Qyvo2i3w2/wAjS9W0r513EcxBGd3OCtoj1xqxtuprVTPi4wMZR09RDC51wlyNhkbHZI2ubIbnw86DAV/5dcvnlV1rlv3Bh2upvKW/6j1pF4tNXZattFVFpqDTU1TKG8jHTt2yzJ5SDuJzvwt34MO11N5S3/UegxvCT3eovNNN1kixeie+rT/lp/4eQrK8JPd6i8003WSLV7XT3eapkmtTZeyrfTvuRfCcSRxwuDS5nSd/Igv2+VLKWzXuoe4ARW6rcD+sYnBo8ZO4L50A3AeAD0rYLprHUt6oxRVlTF2M8sdI2nhbEZ9k5HGObzDlxuWvgSyOjihYZJ5XtjgjYCXSSuOGtaOXeUFu8G0ZisBlPaz3Srlb04j2Ij9Uqs75Tupr1fKdwwY7jVgD9V0he32EK67Fbfciz2q3EgvpadjJnN/Omd7+Qg+MlV/wi2aWGtZfYWE0tWyOKsc0HENTG0Ma53Nh4xv6R4UGR4MXtNHqCPI221tNIR+q6EtH0LL601BcLDS2p9vMAmq6idr+yIeNBhiYDuBIxvKrGxX+5afqZp6IQvFQwR1EFQ1xjla0ktPvSHAjmIKXy/3PUFTHUVxia2CMsghp2lkMLSdpxaHEnJ5ySg2+wa51BcrvarbVQ0BirJzFK+OFzJGtDHPy3Dsc3QrIVVcHlmqKi4m+SMc2iomTQ0r3DAqKmRvFuMfS1oJyeTJA5laqAiIglQiICIiApXJSg4IuaIOChdiIOChdiIPJWUdLX0tTRVUfGUtTHxc0e05u03IdjaaQeZYH8BNFfo1/73VffW0qEHloqOkt9LTUNJHxdNTMEcLNou2W5J7ZxJXeuxEGEummtOXl/G19Ex1RjHZELnQzkdDns5R41gjwbaWznj7vjnHZUWOXOPgs+1bwiDCWnTmnrIXSUFExs7hh1RK501QQeUCSTJA8Sy67EQeC4W223amdSXCnZPAXB7Q4kOjkG7bjc3eD6VrA4N9Kbe0ZbqWZzxZqmBhHQS2MP9q3ZEHgoLbbLZSto6Cmjp6YB3vIx2xcNkue7tiT0krA/gDopwINBPg5H5ZVc48D1tqIPPBBDTQU9NC3Zhp4o4Im5JxHG0NAyd6wtdpHS1xq6iurKJ8lVUua+aQVNQzaIGyPetcB6gtiRBhLXpvT9lmmqLbSuhmniEMjnzSy5jDtrAEjiFmPb0jlz6FzRBqFboDSdZM6ZsdXSFznOeygmDIi528kMkY4DxDC91n0npyyScfSUz5KsDZbU1bzNMwEYIjJAa3PPgBbCiDBXTTGnb1UMq7hSvlnbE2EPZPNF7xpJAIjcAu602Gy2IVQtkD4RVGIz7c0spcYwQ3HGE45Vl0QYO56a09eKltXcaV007IWQNcJpowI2kkDZjcBzrlatO2Cyyzz22kMM08YikkdLLK4sadrZHGuOBlZpEGr3LROlbnK+d1NJTTyHakfQS8SHnnLo8FmTznZXbZ9Iacsk3ZVJBLJVtGGVFZJxssYPLxe4NHhwFsaIOtcXsilY+KVjZI5Glj2SNDmPaeUOa7cu5EGp1OgdH1LnPbST0xc7JbR1D42Z8DDlo9ASl0Fo6me2R1HLVOacgV08kseR0xjDD6QVtalB1NZHGxjI2tZGxoYxjGhrGtG4BrW7gPQuS5og61K5og4IuaIOChdihB//9k="
+            alt="" width="40" class="failory-logo-image">
+          <h3 class="footer-failory-name"><a
+              href="https://www.bing.com/ck/a?!&&p=9772ead464884a03JmltdHM9MTcwMzg5NDQwMCZpZ3VpZD0wZTcxM2M1MS1jYmEwLTZhYTktM2JhOS0yZmMwY2FjODZiMGMmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=0e713c51-cba0-6aa9-3ba9-2fc0cac86b0c&psq=rushi+palve+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQHJ1c2hpcGFsdmU&ntb=1">Rushi
+              Palve Vlogs!</a></h3>
+          <p class="footer-description-failory">Travelling Soul!<br></p>
+        </div>
+        <div class="footer-column w-col w-col-8">
+          <div class="w-row">
+            <div class="w-col w-col-8">
+              <div class="w-row">
+                <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                  <h3 class="footer-titles">Contact Us:-</h3>
+                  <h4>+91 97682 45364</h4>
+                </div>
+
+              </div>
+            </div>
+            <div class="column-center-mobile w-col w-col-4">
+              <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank"
+                class="footer-social-network-icons w-inline-block"><img
+                  src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg"
+                  width="20" alt="Twitter icon"></a><a href="" target="_blank"
+                class="footer-social-network-icons w-inline-block"><img
+                  src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg"
+                  width="20" alt="Instagram icon"></a><a href="" target="_blank"
+                class="footer-social-network-icons w-inline-block"><img
+                  src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg"
+                  width="20" alt="Facebook Icon"></a><a href="" target="_blank"
+                class="footer-social-network-icons w-inline-block"><img
+                  src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg"
+                  width="20" alt="LinkedIn Icon"></a><a href="" target="_blank"
+                class="footer-social-network-icons w-inline-block"><img
+                  src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg"
+                  width="20" alt="Pinterest Icon" class=""></a>
+              <p class="footer-description">Email me at: <a href=""><strong
+                    class="link-email-footer">rushipalve24@gmail.com
+                  </strong></a><br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
